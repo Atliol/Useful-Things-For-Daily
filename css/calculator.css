@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color:#b7b6b620;
+  width: 100;
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(172, 167, 167, 0.87);
+  width: 100;
+  padding: 24px;
+
+}
+
+
+span {
+
+  color: rgb(13, 8, 0);
+}
+
+h2 {
+  color: rgb(147, 5, 5);
+}
+
+
+
+.kk {
+  padding: 5px 10px;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+}
+
+.kk:hover {
+
+  color: rgb(63, 139, 206);
+}
+
+a:hover {
+  color: rgb(16, 18, 22);
+  text-underline-position: under;
+}
+
+
+.navbar h2 {
+  font-size: 30px;
+}
+
+
+.page-header {
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  padding: 1em 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: all ease 0.2s;
+}
+
+.bbd {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.menu {
+
+
+
+  font-family: monospace;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  order: none;
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000000;
+  background-color: none;
+  border: 1px solid #000000;
+  border-radius: 0.24rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.menu:hover {
+  background-color: rgba(105, 200, 232, 0.755);
+  position: relative;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+
+}
+
+.calculator {
+  text-align: center;
+  background-color: hs(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+#display {
+  width: 100%;
+  padding: 25px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+button {
+  width: 65%;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  color: aliceblue;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.oop-btn {
+  background-color: hsl(35, 100%, 55%);
+}
+
+.oop-btn.hover {
+  background-color: hsl(35, 100%, 65%);
+}
+
+.oop-btn:active {
+  background-color: hsl(35, 100%, 75%);
+}
+
+.animi {
+  font-size: 1em;
+  font-size: 77px;
+
+  opacity: 0;
+  transform: translateY(60px);
+  animation: fadeInBottom 3s ease forwards;
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(60px);
+  }
+}
+
+.footer {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(82, 82, 84, 0.31);
+  color: dimgray;
+  padding: 15px 0;
+  position: relative;
+}
+
+.footer-container {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  margin: auto;
+}
+.footer-container img{
+  width: 155px;
+  height: 150px;
+  margin:auto;
+ 
+}
+.fotspn span{
+  color: rgb(147, 5, 5);
+}
+
+
+.footer-section {
+  
+  margin: 15px;
+}
+ul{
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: space-between;
+}
+
+.footer-section h2 {
+  margin-bottom: 9px;
+  font-size: 1.5rem;
+  color: rgb(13, 8, 0);
+}
+
+.footer-section p,
+.footer-section ul {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color:rgb(13, 8, 0);
+}
+
+.footer-section a:hover {
+ color: rgb(63, 139, 206);
+  text-decoration:dotted;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
